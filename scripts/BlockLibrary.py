@@ -1,6 +1,6 @@
 """
-Rhino Design Library - Block Importer
-Downloads and inserts blocks from your GitHub repository
+Rhino Design Library - Block Importer (Private Repository Version)
+Downloads and inserts blocks from your private GitHub repository
 """
 
 import rhinoscriptsyntax as rs
@@ -14,6 +14,10 @@ import System.Net
 GITHUB_USER = "aarslanovic"
 REPO_NAME = "AMAR.IO_WORKSHOP"
 BRANCH = "main"
+
+# GitHub Personal Access Token (REQUIRED for private repos)
+# PASTE YOUR NEW TOKEN BETWEEN THE QUOTES BELOW
+GITHUB_TOKEN = "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"
 
 # Base URLs
 CATALOG_URL = f"https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/catalog.json"
@@ -31,9 +35,14 @@ def ensure_cache_dir():
 
 
 def download_file(url, local_path):
-    """Download a file from URL to local path"""
+    """Download a file from URL to local path with authentication"""
     try:
         web_client = System.Net.WebClient()
+        
+        # Add authentication header for private repositories
+        if GITHUB_TOKEN and GITHUB_TOKEN != "PASTE_YOUR_TOKEN_HERE":
+            web_client.Headers.Add("Authorization", f"token {GITHUB_TOKEN}")
+        
         web_client.DownloadFile(url, local_path)
         return True
     except Exception as e:
@@ -74,12 +83,21 @@ def get_blocks_by_category(catalog):
 def browse_and_insert():
     """Main function - browse library and insert block"""
     
+    # Check if token is set
+    if not GITHUB_TOKEN or GITHUB_TOKEN == "PASTE_YOUR_TOKEN_HERE":
+        rs.MessageBox(
+            "GitHub Token not configured!\n\nPlease edit the script and add your Personal Access Token.",
+            0,
+            "Configuration Error"
+        )
+        return
+    
     # Load catalog
     print("Loading block library...")
     catalog = load_catalog()
     
     if not catalog:
-        rs.MessageBox("Failed to load block library. Check your internet connection.", 0, "Error")
+        rs.MessageBox("Failed to load block library. Check your token and internet connection.", 0, "Error")
         return
     
     # Get blocks organized by category
@@ -184,6 +202,7 @@ Last Updated: {info.get('updated', 'Unknown')}
 
 Total Blocks: {block_count}
 Repository: {GITHUB_USER}/{REPO_NAME}
+Status: Private (Authenticated)
 """
     
     rs.MessageBox(message, 0, "Library Info")
