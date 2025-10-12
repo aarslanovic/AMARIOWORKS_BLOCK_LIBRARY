@@ -11,8 +11,8 @@ import System.Net
 
 # ========== CONFIGURATION ==========
 # Replace these with your GitHub repository details
-GITHUB_USER = "your-username"
-REPO_NAME = "rhino-design-library"
+GITHUB_USER = "aarslanovic"
+REPO_NAME = "AMAR.IO_WORKSHOP"
 BRANCH = "main"
 
 # Base URLs
