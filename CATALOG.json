@@ -1,1 +1,61 @@
-
+{
+  "library_info": {
+    "name": "Rhino Design Library",
+    "version": "1.0",
+    "author": "Your Name",
+    "updated": "2025-10-12"
+  },
+  "blocks": [
+    {
+      "id": "chair_office_01",
+      "name": "Office Chair - Task",
+      "category": "furniture",
+      "file": "furniture/chair_office_task.3dm",
+      "description": "Standard office task chair",
+      "tags": ["seating", "office", "workspace"],
+      "thumbnail": "thumbnails/furniture/chair_office_task.png",
+      "units": "inches",
+      "insertion_point": "center_base"
+    },
+    {
+      "id": "desk_standard_01",
+      "name": "Desk - 60x30",
+      "category": "furniture",
+      "file": "furniture/desk_60x30.3dm",
+      "description": "Standard office desk 60 inches wide",
+      "tags": ["workspace", "office", "desk"],
+      "thumbnail": "thumbnails/furniture/desk_60x30.png",
+      "units": "inches",
+      "insertion_point": "corner"
+    },
+    {
+      "id": "light_recessed_01",
+      "name": "Recessed Light - 6 inch",
+      "category": "fixtures",
+      "file": "fixtures/light_recessed_6in.3dm",
+      "description": "6 inch recessed ceiling light",
+      "tags": ["lighting", "ceiling", "recessed"],
+      "thumbnail": "thumbnails/fixtures/light_recessed_6in.png",
+      "units": "inches",
+      "insertion_point": "center"
+    },
+    {
+      "id": "door_symbol_01",
+      "name": "Door Symbol - Single Swing",
+      "category": "symbols",
+      "file": "symbols/door_single_swing.3dm",
+      "description": "Architectural door symbol with swing arc",
+      "tags": ["door", "symbol", "architectural"],
+      "thumbnail": "thumbnails/symbols/door_single_swing.png",
+      "units": "inches",
+      "insertion_point": "hinge"
+    }
+  ],
+  "categories": {
+    "furniture": "Office and residential furniture",
+    "fixtures": "Lighting, plumbing, and electrical fixtures",
+    "symbols": "Architectural symbols and annotations",
+    "hardware": "Door hardware, handles, locks",
+    "equipment": "Kitchen, lab, and specialized equipment"
+  }
+}
