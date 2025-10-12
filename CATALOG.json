@@ -7,11 +7,11 @@
   },
   "blocks": [
     {
-      "id": "chair_office_01",
-      "name": "Office Chair - Task",
+      "id": "test_box_01",
+      "name": "test_box",
       "category": "furniture",
-      "file": "furniture/chair_office_task.3dm",
-      "description": "Standard office task chair",
+      "file": "furniture/test_box.3dm",
+      "description": "My first test block",
       "tags": ["seating", "office", "workspace"],
       "thumbnail": "thumbnails/furniture/chair_office_task.png",
       "units": "inches",
