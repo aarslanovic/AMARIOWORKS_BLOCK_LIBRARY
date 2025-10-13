@@ -18,10 +18,10 @@
       "insertion_point": "center_base"
     },
     {
-      "id": "desk_standard_01",
-      "name": "Desk - 60x30",
+      "id": "RIBBED_TABLE_01",
+      "name": "RIBBED_TABLE",
       "category": "furniture",
-      "file": "furniture/desk_60x30.3dm",
+      "file": "furniture/RIBBED_TABLE",
       "description": "Standard office desk 60 inches wide",
       "tags": ["workspace", "office", "desk"],
       "thumbnail": "thumbnails/furniture/desk_60x30.png",
