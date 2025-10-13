@@ -18,7 +18,7 @@
       "insertion_point": "center_base"
     },
     {
-      "id": "RIBBED_TABLE_01",
+      "id": "RIBBED_TABLE.3dm",
       "name": "RIBBED_TABLE",
       "category": "furniture",
       "file": "furniture/RIBBED_TABLE.3dm",
@@ -26,7 +26,7 @@
       "tags": ["workspace", "office", "desk"],
       "thumbnail": "thumbnails/furniture/desk_60x30.png",
       "units": "inches",
-      "insertion_point": "corner"
+      "insertion_point": "center_base"
     },
     {
       "id": "light_recessed_01",
