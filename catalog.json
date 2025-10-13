@@ -21,7 +21,7 @@
       "id": "RIBBED_TABLE_01",
       "name": "RIBBED_TABLE",
       "category": "furniture",
-      "file": "furniture/RIBBED_TABLE",
+      "file": "furniture/RIBBED_TABLE.3dm",
       "description": "Standard office desk 60 inches wide",
       "tags": ["workspace", "office", "desk"],
       "thumbnail": "thumbnails/furniture/desk_60x30.png",
