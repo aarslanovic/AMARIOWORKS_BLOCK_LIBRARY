@@ -19,11 +19,11 @@
     
     
     {
-      "id": "test_box",
-      "name": "Test Box",
-      "category": "TESTING",
-      "description": "Simple test box",
-      "file": "FURNITURE/test_box.3dm"
+      "id": "ADD ID",
+      "name": "ADD NAME",
+      "category": "ADD CATEGORY",
+      "description": "ADD DESCRIPTION",
+      "file": "INSERT PATH"
     }
     
     
