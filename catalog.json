@@ -12,9 +12,9 @@
     {
       "id": "RIBBED_TABLE",
       "name": "RIBBED_TABLE",
-      "category": "FURNITURE",
+      "category": "furniture",
       "description": "Modern ribbed table design",
-      "file": "FURNITURE/RIBBED_TABLE.3dm"
+      "file": "furniture/RIBBED_TABLE.3dm"
     },
     
     
