@@ -1,30 +1,16 @@
 {
-  "library_info": {
-    "name": "AMARIO WORKS Design Library",
-    "version": "2.0",
-    "author": "AMARIO",
-    "updated": "2025-01-15"
-  },
-  "blocks": [
-    {
-      "name": "Example Block",
-      "file": "example.3dm",
-      "category": "furniture",
-      "description": "Example static block"
-    }
-  ],
   "grasshopper": [
     {
-      "name": "Parametric Cabinet",
-      "file": "FURNITURE/parametric_cabinet.py",
+      "name": "Professional Base Cabinet",
+      "file": "FURNITURE/professional_cabinet.py",
       "category": "furniture",
-      "description": "Adjustable cabinet with shelves",
+      "description": "Industry-standard base cabinet with doors",
       "parameters": [
-        {"name": "width", "min": 0.5, "max": 20, "default": 3},
-        {"name": "depth", "min": 0.5, "max": 10, "default": 2},
-        {"name": "height", "min": 1, "max": 20, "default": 6},
-        {"name": "shelf_count", "min": 0, "max": 20, "default": 3},
-        {"name": "thickness", "min": 0.01, "max": 0.5, "default": 0.05}
+        {"name": "width", "min": 12, "max": 48, "default": 30},
+        {"name": "depth", "min": 12, "max": 30, "default": 24},
+        {"name": "height", "min": 24, "max": 42, "default": 30.5},
+        {"name": "shelf_count", "min": 0, "max": 5, "default": 1},
+        {"name": "thickness", "min": 0.5, "max": 1, "default": 0.75}
       ]
     }
   ]
