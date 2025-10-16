@@ -21,7 +21,7 @@
     {
       "id": "test_box",
       "name": "Test Box",
-      "category": "furniture",
+      "category": "TESTING",
       "description": "Simple test box",
       "file": "furniture/test_box.3dm"
     }
