@@ -1,53 +1,31 @@
 {
   "library_info": {
-    "name": "Rhino Design Library",
+    "name": "AMARIO WORKS Design Library",
     "version": "2.0",
-    "author": "Amar Arslanovic",
-    "updated": "2025-10-15"
+    "author": "AMARIO",
+    "updated": "2025-01-15"
   },
   "blocks": [
     {
-      "id": "test_box_01",
-      "name": "Test Box",
+      "name": "Example Block",
+      "file": "example.3dm",
       "category": "furniture",
-      "file": "furniture/test_box.3dm",
-      "description": "My first test block",
-      "tags": ["test", "box"],
-      "units": "inches",
-      "insertion_point": "center_base"
-    },
-    {
-      "id": "ribbed_table_01",
-      "name": "Ribbed Table",
-      "category": "furniture",
-      "file": "furniture/RIBBED_TABLE.3dm",
-      "description": "Table with ribbed design",
-      "tags": ["table", "furniture", "ribbed"],
-      "units": "inches",
-      "insertion_point": "center_base"
+      "description": "Example static block"
     }
   ],
   "grasshopper": [
     {
-      "id": "parametric_shelf_01",
-      "name": "Parametric Shelf",
+      "name": "Parametric Cabinet",
+      "file": "FURNITURE/parametric_cabinet.py",
       "category": "furniture",
-      "file": "FURNITURE/PARAMETRIC SHELF 3.gh",
-      "description": "Adjustable parametric shelf - customize dimensions",
-      "tags": ["shelf", "parametric", "furniture", "storage"],
+      "description": "Adjustable cabinet with shelves",
       "parameters": [
-        "Width",
-        "Depth",
-        "Height",
-        "Shelf Count"
+        {"name": "width", "min": 0.5, "max": 20, "default": 3},
+        {"name": "depth", "min": 0.5, "max": 10, "default": 2},
+        {"name": "height", "min": 1, "max": 20, "default": 6},
+        {"name": "shelf_count", "min": 0, "max": 20, "default": 3},
+        {"name": "thickness", "min": 0.01, "max": 0.5, "default": 0.05}
       ]
     }
-  ],
-  "categories": {
-    "furniture": "Office and residential furniture",
-    "fixtures": "Lighting, plumbing, and electrical fixtures",
-    "symbols": "Architectural symbols and annotations",
-    "hardware": "Door hardware, handles, locks",
-    "equipment": "Kitchen, lab, and specialized equipment"
-  }
+  ]
 }
