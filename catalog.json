@@ -1,54 +1,46 @@
 {
   "library_info": {
-    "name": "AMARIOWORKS DESIGN LIBRARY",
-    "version": "1.0",
-    "author": "AMAR ARSLANOVIC",
+    "name": "Rhino Design Library",
+    "version": "2.0",
+    "author": "Amar Arslanovic",
     "updated": "2025-10-15"
   },
   "blocks": [
     {
       "id": "test_box_01",
-      "name": "test_box",
+      "name": "Test Box",
       "category": "furniture",
       "file": "furniture/test_box.3dm",
       "description": "My first test block",
-      "tags": ["seating", "office", "workspace"],
-      "thumbnail": "thumbnails/furniture/chair_office_task.png",
+      "tags": ["test", "box"],
       "units": "inches",
       "insertion_point": "center_base"
     },
     {
-      "id": "RIBBED_TABLE",
-      "name": "RIBBED_TABLE",
-      "category": "FURNITURE",
+      "id": "ribbed_table_01",
+      "name": "Ribbed Table",
+      "category": "furniture",
       "file": "furniture/RIBBED_TABLE.3dm",
-      "description": "RIBBED_TABLE",
-      "tags": ["workspace", "office", "desk"],
-      "thumbnail": "thumbnails/furniture/desk_60x30.png",
+      "description": "Table with ribbed design",
+      "tags": ["table", "furniture", "ribbed"],
       "units": "inches",
       "insertion_point": "center_base"
-    },
+    }
+  ],
+  "grasshopper": [
     {
-      "id": "light_recessed_01",
-      "name": "Recessed Light - 6 inch",
-      "category": "fixtures",
-      "file": "fixtures/light_recessed_6in.3dm",
-      "description": "6 inch recessed ceiling light",
-      "tags": ["lighting", "ceiling", "recessed"],
-      "thumbnail": "thumbnails/fixtures/light_recessed_6in.png",
-      "units": "inches",
-      "insertion_point": "center"
-    },
-    {
-      "id": "door_symbol_01",
-      "name": "Door Symbol - Single Swing",
-      "category": "symbols",
-      "file": "symbols/door_single_swing.3dm",
-      "description": "Architectural door symbol with swing arc",
-      "tags": ["door", "symbol", "architectural"],
-      "thumbnail": "thumbnails/symbols/door_single_swing.png",
-      "units": "inches",
-      "insertion_point": "hinge"
+      "id": "parametric_shelf_01",
+      "name": "Parametric Shelf",
+      "category": "furniture",
+      "file": "FURNITURE/PARAMETRIC SHELF 3.gh",
+      "description": "Adjustable parametric shelf - customize dimensions",
+      "tags": ["shelf", "parametric", "furniture", "storage"],
+      "parameters": [
+        "Width",
+        "Depth",
+        "Height",
+        "Shelf Count"
+      ]
     }
   ],
   "categories": {
