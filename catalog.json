@@ -1,9 +1,9 @@
 {
   "library_info": {
-    "name": "Rhino Design Library",
+    "name": "AMARIOWORKS DESIGN LIBRARY",
     "version": "1.0",
-    "author": "Your Name",
-    "updated": "2025-10-12"
+    "author": "AMAR ARSLANOVIC",
+    "updated": "2025-10-15"
   },
   "blocks": [
     {
@@ -20,9 +20,9 @@
     {
       "id": "RIBBED_TABLE",
       "name": "RIBBED_TABLE",
-      "category": "furniture",
+      "category": "FURNITURE",
       "file": "furniture/RIBBED_TABLE.3dm",
-      "description": "RIBBED TABLE",
+      "description": "RIBBED_TABLE",
       "tags": ["workspace", "office", "desk"],
       "thumbnail": "thumbnails/furniture/desk_60x30.png",
       "units": "inches",
