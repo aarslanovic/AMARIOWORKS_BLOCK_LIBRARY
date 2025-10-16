@@ -1,17 +1,31 @@
 {
-  "grasshopper": [
+  "library_info": {
+    "name": "AMAR.IO WORKSHOP",
+    "version": "1.0",
+    "author": "aarslanovic",
+    "updated": "2025-10-16"
+  },
+
+  "blocks": [
+    
+    
     {
-      "name": "Professional Base Cabinet",
-      "file": "FURNITURE/professional_cabinet.py",
+      "id": "ribbed_table",
+      "name": "Ribbed Table",
       "category": "furniture",
-      "description": "Industry-standard base cabinet with doors",
-      "parameters": [
-        {"name": "width", "min": 12, "max": 48, "default": 30},
-        {"name": "depth", "min": 12, "max": 30, "default": 24},
-        {"name": "height", "min": 24, "max": 42, "default": 30.5},
-        {"name": "shelf_count", "min": 0, "max": 5, "default": 1},
-        {"name": "thickness", "min": 0.5, "max": 1, "default": 0.75}
-      ]
+      "description": "Modern ribbed table design",
+      "file": "furniture/RIBBED_TABLE.3dm"
+    },
+    
+    
+    {
+      "id": "test_box",
+      "name": "Test Box",
+      "category": "furniture",
+      "description": "Simple test box",
+      "file": "furniture/test_box.3dm"
     }
+    
+    
   ]
 }
