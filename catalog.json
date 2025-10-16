@@ -10,20 +10,22 @@
     
     
     {
-      "id": "RIBBED_TABLE",
-      "name": "RIBBED_TABLE",
-      "category": "FURNITURE",
+      "id": "ribbed_table",
+      "name": "Ribbed Table",
+      "category": "furniture",
       "description": "Modern ribbed table design",
-      "file": "furniture/RIBBED_TABLE.3dm"
+      "file": "furniture/RIBBED_TABLE.3dm",
+      "thumbnail": "furniture/RIBBED_TABLE.png"
     },
     
     
     {
-      "id": "ADD ID",
-      "name": "ADD NAME",
-      "category": "ADD CATEGORY",
-      "description": "ADD DESCRIPTION",
-      "file": "INSERT PATH"
+      "id": "test_box",
+      "name": "Test Box",
+      "category": "furniture",
+      "description": "Simple test box",
+      "file": "furniture/test_box.3dm",
+      "thumbnail": "furniture/test_box.png"
     }
     
     
